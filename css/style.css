@@ -354,10 +354,10 @@ img {
     height: 100%;
     z-index: -1; */
 } 
-/* 
+
 .photo__tube:before.photo__tube:hover {
     display: block;
-} */
+}
 
 .icon__search {
     display: inline-block;
