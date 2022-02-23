@@ -133,8 +133,8 @@ img {
     /* overflow: hidden        ; */
 }
 
-.main__form:before {
-    background: rgba(80, 96, 216, 0.7);
+#main__form:before {
+    background: rgba(80, 96, 216, 0.8);
     content: "";
     position: absolute;
     width: 100%;
@@ -457,7 +457,7 @@ img {
     color: #fff;
 }
 
-.benefits:before {
+#benefits:before {
     background: rgba(80, 96, 216, 0.7);
     content: "";
     position: absolute;
