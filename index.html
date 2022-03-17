@@ -9,8 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="fonts/font.css">
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <header class="header">
@@ -48,13 +51,18 @@
                             <h4>trial class</h4>
                             <input type="text" name="username" placeholder="Enter your name" autofocus required>
                             <input type="tel" name="phone-number" placeholder="Enter your phone" required>
-                            <select name="class" required>
+                            <div class="select__container">
+                               <select class= "select__class" name="class" required>
                                 <option value="class">Choose you class</option>
                                 <option value="class">Choose you class</option>
                                 <option value="class">Choose you class</option>
                                 <option value="class">Choose you class</option>
-                            </select>
-                            <input type="submit" name="submit" value="Try it">
+                                </select>
+                                <div class="select__arrow"></div>
+                            </div>
+                            
+
+                            <input class="submit__btn" type="submit" name="submit" value="Try it">
                         </form>
                     </div>
                     
@@ -179,8 +187,9 @@
                     </div>
 
                     <div class="about__right">
-                        <div class="about__img">
-                            <img src="images/img-13.jpg" alt="about yoga image">
+                        <div class="single-slide slider">
+                            <div class="slider-item"><img src="images/img-13.jpg" alt="about yoga image"></div>
+                            <div class="slider-item"><img src="images/img-13.jpg" alt="about yoga image"></div>
                         </div>
                     </div>
                 </div>
@@ -195,7 +204,7 @@
                             <img src="images/ico-01.png" alt="overall health">
                         </div>
                         <div class="benefits__descr">
-                            <h4 class="benefits__header">improved overall health</h4>
+                            <h4 class="benefits__header">improved overall<br> health</h4>
                             <p class="benefits__text">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
                         </div>
                     </div>
@@ -205,7 +214,7 @@
                             <img src="images/ico-02.png" alt="increased concentration">
                         </div>
                         <div class="benefits__descr">
-                            <h4 class="benefits__header">increased concentration</h4>
+                            <h4 class="benefits__header">increased<br>concentration</h4>
                             <p class="benefits__text">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
                         </div>
                     </div>
@@ -215,7 +224,7 @@
                             <img src="images/ico-03.png" alt="blance your mind">
                         </div>
                         <div class="benefits__descr">
-                            <h4 class="benefits__header">blance your mind</h4>
+                            <h4 class="benefits__header">blance<br>your mind</h4>
                             <p class="benefits__text">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
                         </div>
                     </div>
@@ -225,7 +234,7 @@
                             <img src="images/ico-04.png" alt="sleep better">
                         </div>
                         <div class="benefits__descr">
-                            <h4 class="benefits__header">sleep better</h4>
+                            <h4 class="benefits__header">sleep<br>better</h4>
                             <p class="benefits__text">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
                         </div>
                     </div>
@@ -245,7 +254,7 @@
                             <img src="images/ico-06.png" alt="strengthens your bone">
                         </div>
                         <div class="benefits__descr">
-                            <h4 class="benefits__header">strengthens your bones</h4>
+                            <h4 class="benefits__header">strengthens<br>your bones</h4>
                             <p class="benefits__text">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
                         </div>
                     </div>
@@ -255,7 +264,7 @@
                             <img src="images/ico-07.png" alt="increased flexibility">
                         </div>
                         <div class="benefits__descr">
-                            <h4 class="benefits__header">increased flexibility</h4>
+                            <h4 class="benefits__header">increased<br>flexibility</h4>
                             <p class="benefits__text">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
                         </div>
                     </div>
@@ -265,7 +274,7 @@
                             <img src="images/ico-08.png" alt="lower blood pressure">
                         </div>
                         <div class="benefits__descr">
-                            <h4 class="benefits__header">lower blood pressure</h4>
+                            <h4 class="benefits__header">lower blood<br>pressure</h4>
                             <p class="benefits__text">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
                         </div>
                     </div>
@@ -355,7 +364,7 @@
                     <div class="contacts__wrapper">
                         <div class="contacts__block adress">
                             <a href="#"><span class="ico icon-location"></span></a>
-                            <p class="contact__text"><address>joseph mountains <br>apt.716</address></p>
+                            <p class="contact__text"><adress>joseph mountains <br>apt.716</adress></p>
                         </div>
 
                         <div class="contacts__block mail">
@@ -381,5 +390,10 @@
             <p>Copyright &#169 2016-2017 Yoga clases</p>
        </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>
